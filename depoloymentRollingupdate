@@ -1,0 +1,10 @@
+In case if we need a rolling update, meaing that there is zero downtime. We should use below steps.
+
+kubectl apply -f kubia-deployment.yaml
+kubectl set image deployment kubia <new version of image>
+
+To verify the image is getting changed use below commands.
+kubectl get deploy
+kubectl get po
+kubectl get rs
+
