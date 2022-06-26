@@ -1,0 +1,2 @@
+Basic definition of daemon set is, where we need a pod to run on every active node in a cluster. Normaly scheduler takes care of running it.
+ Very basic and common use case for it is if we want logging, tracing, or network level analysis of each node. we need a pod to analyse it.
