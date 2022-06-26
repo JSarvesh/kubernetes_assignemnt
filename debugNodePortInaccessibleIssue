@@ -1,0 +1,15 @@
+TO check the pod exist and the EP is assigned.
+1. kubectl get po -o wide
+
+To check if the svc is created and attached to pod successfully.
+2. kubectl get svc
+
+For each port of each service there should be an entry in iptables.
+iptables-save | grep hostnames
+
+To check pods details:
+kubectl describe pods
+
+
+To check the pods log for any failure or error
+kubectl -n kube-system logs podname
